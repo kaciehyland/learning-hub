@@ -5,102 +5,266 @@
 <title>Learning Hub</title>
 <style>
     body {
-        font-family: Arial, sans-serif;
-        background: #f5f7fa;
+        font-family: "Nunito", Arial, sans-serif;
+        background: #fdf6ff;
         margin: 0;
         padding: 20px;
         text-align: center;
     }
+
     h1 {
-        color: #333;
-        margin-bottom: 10px;
+        color: #5a3e85;
+        font-size: 36px;
+        margin-bottom: 5px;
     }
+
+    p {
+        color: #7a5ca4;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
     h2 {
-        color: #444;
+        color: #5a3e85;
         margin-top: 40px;
+        font-size: 26px;
     }
+
     .button-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
         margin-top: 20px;
     }
+
     a.button {
-        display: block;
-        padding: 15px;
-        background: #4a90e2;
-        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 14px 18px;
+        background: #ffffff;
+        color: #5a3e85;
         text-decoration: none;
-        border-radius: 8px;
-        font-size: 16px;
-        transition: background 0.2s;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: 600;
+        box-shadow: 0 4px 10px rgba(90, 62, 133, 0.15);
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
+
     a.button:hover {
-        background: #357ABD;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 14px rgba(90, 62, 133, 0.25);
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 6px;
     }
 </style>
 </head>
 <body>
 
 <h1>Learning Hub</h1>
-<p>Click a button to explore!</p>
+<p>Tap a button to explore!</p>
+
+<!-- Helper: favicon auto-loader -->
+<!-- Uses Google's favicon service to fetch icons from each domain -->
+<!-- Example: https://www.google.com/s2/favicons?sz=64&domain=code.org -->
 
 <!-- Coding -->
 <h2>Coding</h2>
 <div class="button-grid">
-    <a class="button" href="https://code.org" target="_blank">Code.org</a>
-    <a class="button" href="https://scratchjr.org" target="_blank">ScratchJr</a>
-    <a class="button" href="https://scratch.mit.edu" target="_blank">Scratch</a>
-    <a class="button" href="https://www.kodable.com" target="_blank">Kodable</a>
-    <a class="button" href="https://www.tynker.com" target="_blank">Tynker</a>
+    <a class="button" href="https://code.org" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=code.org">
+        Code.org
+    </a>
+    <a class="button" href="https://scratchjr.org" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=scratchjr.org">
+        ScratchJr
+    </a>
+    <a class="button" href="https://scratch.mit.edu" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=scratch.mit.edu">
+        Scratch
+    </a>
+    <a class="button" href="https://www.kodable.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=kodable.com">
+        Kodable
+    </a>
+    <a class="button" href="https://www.tynker.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=tynker.com">
+        Tynker
+    </a>
 </div>
 
 <!-- Typing -->
 <h2>Typing</h2>
 <div class="button-grid">
-    <a class="button" href="https://www.typingclub.com/kids" target="_blank">TypingClub Jr</a>
-    <a class="button" href="https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z3c6tfr" target="_blank">BBC Dance Mat</a>
-    <a class="button" href="https://www.typingclub.com" target="_blank">TypingClub</a>
+    <a class="button" href="https://www.typingclub.com/kids" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=typingclub.com">
+        TypingClub Jr
+    </a>
+    <a class="button" href="https://www.bbc.co.uk/bitesize/topics/zf2f9j6/articles/z3c6tfr" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=bbc.co.uk">
+        BBC Dance Mat
+    </a>
+    <a class="button" href="https://www.typingclub.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=typingclub.com">
+        TypingClub
+    </a>
 </div>
 
 <!-- Reading -->
 <h2>Reading & Books</h2>
 <div class="button-grid">
-    <a class="button" href="https://www.oxfordowl.co.uk" target="_blank">Oxford Owl</a>
-    <a class="button" href="https://www.overdrive.com/apps/libby" target="_blank">Libby</a>
-    <a class="button" href="https://www.starfall.com" target="_blank">Starfall</a>
-    <a class="button" href="https://www.storylineonline.net" target="_blank">Storyline Online</a>
+    <a class="button" href="https://www.oxfordowl.co.uk" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=oxfordowl.co.uk">
+        Oxford Owl
+    </a>
+    <a class="button" href="https://www.overdrive.com/apps/libby" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=overdrive.com">
+        Libby
+    </a>
+    <a class="button" href="https://www.starfall.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=starfall.com">
+        Starfall
+    </a>
+    <a class="button" href="https://www.storylineonline.net" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=storylineonline.net">
+        Storyline Online
+    </a>
 </div>
 
 <!-- Math -->
 <h2>Math</h2>
 <div class="button-grid">
-    <a class="button" href="https://learn.khanacademy.org/khan-academy-kids" target="_blank">Khan Academy Kids</a>
-    <a class="button" href="https://www.mathplayground.com" target="_blank">Math Playground</a>
-    <a class="button" href="https://beastacademy.com/playground" target="_blank">Beast Academy Playground</a>
-    <a class="button" href="https://www.coolmath4kids.com" target="_blank">CoolMath4Kids</a>
-    <a class="button" href="https://www.prodigygame.com" target="_blank">Prodigy Math</a>
+    <a class="button" href="https://learn.khanacademy.org/khan-academy-kids" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=khanacademy.org">
+        Khan Academy Kids
+    </a>
+    <a class="button" href="https://www.mathplayground.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=mathplayground.com">
+        Math Playground
+    </a>
+    <a class="button" href="https://beastacademy.com/playground" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=beastacademy.com">
+        Beast Academy Playground
+    </a>
+    <a class="button" href="https://www.coolmath4kids.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=coolmath4kids.com">
+        CoolMath4Kids
+    </a>
+    <a class="button" href="https://www.prodigygame.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=prodigygame.com">
+        Prodigy Math
+    </a>
 </div>
 
 <!-- Science -->
 <h2>Science</h2>
 <div class="button-grid">
-    <a class="button" href="https://mysterydoug.com" target="_blank">Mystery Doug</a>
-    <a class="button" href="https://www.nasa.gov/kidsclub" target="_blank">NASA Kids Club</a>
-    <a class="button" href="https://sciencebob.com" target="_blank">Science Bob</a>
-    <a class="button" href="https://kids.nationalgeographic.com" target="_blank">NatGeo Kids</a>
-    <a class="button" href="https://jr.brainpop.com" target="_blank">BrainPOP Jr</a>
+    <a class="button" href="https://mysterydoug.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=mysterydoug.com">
+        Mystery Doug
+    </a>
+    <a class="button" href="https://www.nasa.gov/kidsclub" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=nasa.gov">
+        NASA Kids Club
+    </a>
+    <a class="button" href="https://sciencebob.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=sciencebob.com">
+        Science Bob
+    </a>
+    <a class="button" href="https://kids.nationalgeographic.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=nationalgeographic.com">
+        NatGeo Kids
+    </a>
+    <a class="button" href="https://jr.brainpop.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=brainpop.com">
+        BrainPOP Jr
+    </a>
 </div>
 
 <!-- History -->
 <h2>History & Social Studies</h2>
 <div class="button-grid">
-    <a class="button" href="https://www.ducksters.com" target="_blank">Ducksters</a>
-    <a class="button" href="https://www.bbc.co.uk/bitesize" target="_blank">BBC Bitesize</a>
-    <a class="button" href="https://www.si.edu/kids" target="_blank">Smithsonian Kids</a>
-    <a class="button" href="https://www.dkfindout.com" target="_blank">DK Find Out</a>
+    <a class="button" href="https://www.ducksters.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=ducksters.com">
+        Ducksters
+    </a>
+    <a class="button" href="https://www.bbc.co.uk/bitesize" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=bbc.co.uk">
+        BBC Bitesize
+    </a>
+    <a class="button" href="https://www.si.edu/kids" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=si.edu">
+        Smithsonian Kids
+    </a>
+    <a class="button" href="https://www.dkfindout.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=dkfindout.com">
+        DK Find Out
+    </a>
 </div>
 
+<!-- Research -->
+<h2>Encyclopedias & Research</h2>
+<div class="button-grid">
+    <a class="button" href="https://wonderopolis.org" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=wonderopolis.org">
+        Wonderopolis
+    </a>
+    <a class="button" href="https://www.kidsdiscover.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=kidsdiscover.com">
+        Kids Discover
+    </a>
+</div>
+
+<!-- Art -->
+<h2>Art, Music & Creativity</h2>
+<div class="button-grid">
+    <a class="button" href="https://musiclab.chromeexperiments.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=chromeexperiments.com">
+        Chrome Music Lab
+    </a>
+    <a class="button" href="https://toytheater.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=toytheater.com">
+        Toy Theater
+    </a>
+    <a class="button" href="https://www.tate.org.uk/kids" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=tate.org.uk">
+        Tate Kids
+    </a>
+    <a class="button" href="https://www.canva.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=canva.com">
+        Canva
+    </a>
+</div>
+
+<!-- Logic -->
+<h2>Logic & Problem Solving</h2>
+<div class="button-grid">
+    <a class="button" href="https://www.setgame.com/set/puzzle" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=setgame.com">
+        Set Game
+    </a>
+    <a class="button" href="https://lightbot.com/flash.html" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=lightbot.com">
+        Lightbot
+    </a>
+    <a class="button" href="https://www.coolmathgames.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=coolmathgames.com">
+        CoolMath Games
+    </a>
+    <a class="button" href="https://www.chesskid.com" target="_blank">
+        <img class="icon" src="https://www.google.com/s2/favicons?sz=64&domain=chesskid.com">
+        ChessKid
+    </a>
+</div>
+
+</body>
+</html>
 <!-- Research -->
 <h2>Encyclopedias & Research</h2>
 <div class="button-grid">
